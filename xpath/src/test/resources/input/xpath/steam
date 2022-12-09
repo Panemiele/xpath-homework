@@ -1,5 +1,5 @@
 Titolo#//*[@id="appHubAppName"]
 Recensione#//*[@id="userReviews"]/div/div[2]
-Data rilascio#//*[@class="glance_ctn_responsive_left"]/descendant::div[@class="release_date"]/div[2]
+Data rilascio#//*[@class="release_date"]/div[2]
 Sviluppatore#//*[@id="developers_list"]/descendant::*
 Editore#//*[@class="glance_ctn_responsive_left"]/div[4]/div[2]/descendant::*
