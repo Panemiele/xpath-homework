@@ -1,0 +1,5 @@
+Titolo#//h1[contains(@class, "app-header__title")]
+Età per giocare#//h1[contains(@class, "app-header__title")]/span
+Valutazione#//figcaption[@class="we-rating-count star-rating__count"]
+Editore#//h2[contains(@class, "app-header__identity")]/a
+Prezzo#//li[@class="product-header__list__item"]/ul/li[1]

@@ -3,10 +3,10 @@ package it.uniroma3.ingdati.xpath.logic;
 import it.uniroma3.ingdati.xpath.domain.ExtractedData;
 import it.uniroma3.ingdati.xpath.domain.ExtractedLabeledData;
 import it.uniroma3.ingdati.xpath.utils.Utils;
-import it.uniroma3.ingdati.xpath.utils.Utils;
+import it.uniroma3.ingdati.xpath.utils.WebDriverSingleton;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -20,9 +20,10 @@ public class ExtractorLogic {
 
     private static final Logger logger = Logger.getLogger(ExtractorLogic.class.toString());
     private static final int MAX_WAIT_DURATION = 5;
+    private static WebDriver driver;
 
     public ExtractorLogic() {
-        System.setProperty("webdriver.chrome.driver", Utils.getResourceFullPath(Utils.getDriversLocation()));
+        System.setProperty("webdriver.edge.driver", Utils.getResourceFullPath(Utils.getDriversLocation()));
     }
 
     public ExtractedData extractData(String url, List<String> xpaths) {
@@ -31,15 +32,13 @@ public class ExtractorLogic {
         ExtractedData extractedData = new ExtractedData();
         extractedData.setUrl(url);
 
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
+        WebDriver driver = WebDriverSingleton.getInstance().getWebDriver();
         driver.get(url);
 
         for(String xpathExpression : xpaths) {
             String result = driver.findElement(By.xpath(xpathExpression)).getText();
             extractedData.getXpath2data().put(xpathExpression, result);
         }
-
         driver.close();
 
         logger.info("ExtractorLogic - extractLabeledData(): extractedData=" + extractedData);
@@ -53,8 +52,7 @@ public class ExtractorLogic {
         ExtractedLabeledData extractedLabeledData = new ExtractedLabeledData();
         extractedLabeledData.setUrl(url);
 
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
+        WebDriver driver = WebDriverSingleton.getInstance().getWebDriver();
         driver.get(url);
 
         for(Map.Entry<String,List<String>> label2xpathEntry : label2xpath.entrySet()) {
@@ -72,8 +70,6 @@ public class ExtractorLogic {
                 }
             }
         }
-
-        driver.close();
 
         logger.info("ExtractorLogic - extractLabeledData(): extractedLabeledData=" + extractedLabeledData);
 

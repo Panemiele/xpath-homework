@@ -1,0 +1,14 @@
+it\uniroma3\ingdati\xpath\service\ExtractorService.class
+it\uniroma3\ingdati\xpath\utils\Utils.class
+it\uniroma3\ingdati\xpath\service\impl\ExtractorServiceImpl.class
+it\uniroma3\ingdati\xpath\XpathApplication.class
+it\uniroma3\ingdati\xpath\utils\Constants.class
+it\uniroma3\ingdati\xpath\domain\ExtractedLabeledData.class
+it\uniroma3\ingdati\xpath\enums\DownloadEngine.class
+it\uniroma3\ingdati\xpath\utils\PropertiesConstants.class
+it\uniroma3\ingdati\xpath\vo\ExtractedLabeledDataVO.class
+it\uniroma3\ingdati\xpath\utils\PropertiesReader.class
+it\uniroma3\ingdati\xpath\domain\ExtractedData.class
+it\uniroma3\ingdati\xpath\utils\OSValidator.class
+it\uniroma3\ingdati\xpath\utils\csv\CSVUtils.class
+it\uniroma3\ingdati\xpath\logic\ExtractorLogic.class

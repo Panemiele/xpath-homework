@@ -1,0 +1,6 @@
+Titolo#//*[@id="main"]/div/div[1]/div[3]/div[2]/div/div/div/div[1]/div/div/div/h1
+Prezzo#//*[@id="main"]/div/div[1]/div[3]/div[2]/div/div/div/div[2]/div/div/div/div/label/div/span/span/span
+Piattaforma#//div[@data-qa="gameInfo"]/descendant::dt[text()="Piattaforma:"]/following-sibling::dd[1]
+Data Uscita#//div[@data-qa="gameInfo"]/descendant::dt[text()="Uscita:"]/following-sibling::dd[1]
+Editore#//div[@data-qa="gameInfo"]/descendant::dt[text()="Editore:"]/following-sibling::dd[1]
+Genere#//div[@data-qa="gameInfo"]/descendant::dt[text()="Genere:"]/following-sibling::dd[1]

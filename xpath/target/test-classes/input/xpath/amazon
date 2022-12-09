@@ -1,0 +1,5 @@
+Nome articolo#//span[@id="productTitle"]
+Prezzo#//*[@id="corePrice_feature_div"]/div/span/span[2]/*
+Data prevista di consegna#//*[@id="mir-layout-DELIVERY_BLOCK-slot-PRIMARY_DELIVERY_MESSAGE_LARGE"]/span/span
+Spedito da#//*[@id="tabular-buybox"]/div[1]/div[2]/div/span
+Venduto da#//*[@id="sellerProfileTriggerId"]

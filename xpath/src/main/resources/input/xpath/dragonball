@@ -1,7 +1,0 @@
-Nome#//*[@id="mw-content-text"]/div/aside/h2
-Razza#//*[@id="mw-content-text"]/div/aside/section[1]/div/h3[text()="Razza"]/following-sibling::div
-Sesso#//*[@id="mw-content-text"]/div/aside/section[1]/div/h3[text()="Sesso"]/following-sibling::div
-Altezza#//*[@id="mw-content-text"]/div/aside/section[1]/div/h3[text()="Altezza"]/following-sibling::div
-Peso#//*[@id="mw-content-text"]/div/aside/section[1]/div/h3[text()="Peso"]/following-sibling::div
-Fedele a#//*[@id="mw-content-text"]/div/aside/section[1]/div/h3[text()="Fedele a"]/following-sibling::div
-

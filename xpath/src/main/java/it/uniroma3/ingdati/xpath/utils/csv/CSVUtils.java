@@ -10,7 +10,7 @@ import java.util.*;
 
 public class CSVUtils {
 
-    private static final String FOLDER_PATH = "./target/output/";
+    private static final String FOLDER_PATH = "./src/test/resources/output/";
     private static final String SEPARATOR = ",";
     private static final String NEW_LINE = "\n";
     private static final String CSV_EXTENSION = ".csv";
